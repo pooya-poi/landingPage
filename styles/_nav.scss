@@ -1,0 +1,125 @@
+@import "colors";
+header {
+	background: url(../assets/images/background.jpg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	padding-top: 10px;
+
+
+
+
+	/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+	  #main {
+		transition: margin-left .5s;
+		padding: 20px;
+	  }
+
+
+
+
+	nav {
+		color: $color1;
+		display: flex;
+		flex-flow: row-reverse wrap;
+		justify-content: space-between;
+		justify-items: start;
+		padding: 0px 10px;
+
+		ul {
+			padding: 50px 0px;
+			display: flex;
+
+			li {
+				display: flex;
+				padding: 0 20px;
+			}
+		}
+
+		.nav-logo {
+			font-family: 'Lobster', cursive;
+			line-height: 0;
+
+			img {
+				width: 80px;
+				height: 80px;
+			}
+
+			.logo-text {
+				margin: 55px 20px !important;
+				position: absolute;
+				font-size: 20px;
+			}
+
+			// padding: -20px 0px !important;
+		}
+	}
+
+	p {
+		width: 400px;
+		color: $color3;
+	}
+
+	.header-bottom-img {
+		background: url(../assets/images/3.png);
+		background-size: cover;
+		width: 100%;
+		height: 150px;
+		position: absolute;
+		left: 0;
+		bottom: 0px;
+
+		// top: 100%;
+	}
+
+	.btn-primary {
+		background: $color1;
+		color: $color4;
+		border-radius: 0;
+		outline: none;
+		border: none;
+
+		&:hover {
+			background: $color3 !important;
+			color: $color1;
+			box-shadow: 0 0 18px -4px rgba(255, 255, 255, 0.5);
+		}
+	}
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:$color3;
+	
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+
+	/* 0.5 second transition effect to slide in the sidenav */
+	a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: $color1 ;
+		display: block;
+		transition: 0.3s;
+
+		&:hover {
+			color: #f1f1f1;
+		}
+	}
+
+	.closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+}
